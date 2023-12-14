@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./theme.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  @include body-theme;
+}

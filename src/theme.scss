@@ -1,0 +1,28 @@
+:root {
+  --primary-yellow: #ffcb05;
+  --secondary-blue: #3b5ca8;
+
+  --alerts-danger: #ff3326;
+  --alerts-success: #45b572;
+  --alerts-warning: #f9aa35;
+
+  --grey-500: #1e1e1f;
+  --grey-400: #4b4b4d;
+  --grey-300: #7d7e80;
+  --grey-200: #d2d4d6;
+  --grey-100: #f5f7fa;
+  --white: #ffffff;
+
+  --background-color: var(--grey-100);
+  --text-color: var(--grey-500);
+}
+
+:root .dark-theme {
+  --background-color: var(--grey-500);
+  --text-color: var(--grey-100);
+}
+
+@mixin body-theme {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}

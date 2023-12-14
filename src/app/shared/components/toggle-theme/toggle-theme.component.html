@@ -1,0 +1,21 @@
+<button (click)="toggleTheme()" data-testid="btn-toggle-theme">
+  @if (theme() === "light") {
+    <img
+      data-testid="btn-toggle-theme-icon-moon"
+      ngSrc="assets/svg/moon.svg"
+      alt="ícone de lua"
+      height="15"
+      width="15"
+    />
+    Tema escuro
+  } @else {
+    <img
+      data-testid="btn-toggle-theme-icon-sun"
+      ngSrc="assets/svg/sun.svg"
+      alt="ícone do sol"
+      height="13"
+      width="13"
+    />
+    Tema claro
+  }
+</button>
